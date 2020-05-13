@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charest="UTF-8">
+        <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+        <title>
+            Document
+        </title>
+        <style>
+            .card{
+                width: 250px;
+                height: 400px;
+                background-color: #f7f5ec;
+                margin: 100px auto;
+                overflow: hidden;
+                position: relative;
+            }
+            .card:hover{
+                box-shadow: 0 0 0 2px #ee0000;
+            }
+            .header{
+                width: 130px;
+                height: 130px;
+                background-color: #eb3f2f;
+                border-radius: 50%;
+                margin: 20px auto;
+                position: absolute;
+                left: 0;
+                right: 0;
+            }
+            .header:before{
+                content: "";
+                width: 100%;
+                height: 0;
+                background-color: #eb3f2f;
+                position: absolute;
+                transform: scale(3);
+                border-radius: 50%;
+                bottom: 150px;
+                opacity: 0.4;
+                transition:0.3s;
+            }
+            .card:hover .header:before{
+                height:100% ;
+            }
+            .header img{
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                transition: all 0.3s;
+            }
+            .card:hover .header img{
+                transform: scale(0.7);
+                box-shadow: 0 0 0 14px #f7f5ec;
+            }
+            .about{
+                position: absolute;
+                top: 210px;
+                text-align: center;
+                width:100%;
+            }
+            .about .title{
+                font-size: 25px;
+            }
+            .about .post{
+                display: block;
+            }
+            .card:hover .about{
+                color: #eb3f2f;
+                opacity: 0.4;
+                transition: 0.3s;
+            }
+            .contact{
+                width: 100%;
+                height: 30px;
+                background-color: #ee0000;
+                position: absolute;
+                bottom: -30px;
+                text-align: center;
+                transition: all 0.3s;
+            }
+            .contact li{
+                display: inline-block;
+            }
+            .contact li a{
+                color: #fff;
+                padding: 7px;
+            }
+            .card .contact li a:hover{
+                color: #ee0000;
+                background-color: white;
+                transition: 0.5s;
+            }
+            .card:hover .contact{
+                bottom: 0px;
+            }
+            .contact .info{
+                font-size: 15px;
+            }
+            .card:hover .contact .info{
+                text-align: left;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "card">
+            <div class = "header">
+                <img src=img/1.jpg>
+            </div>
+            <div class="about">
+                <span class = "title">作者：韩瑞祺</span>
+                <span class = "post">纪念一下首个前端作品</span>
+            </div>
+            <div class="contact">
+                <span class = "info">联系方式:</span>
+                <li><a href="tencent://message/?Site=baidu.com&uin=40980338&Menu=yes" class="fa fa-qq"></a></li>
+                <li><a href="##" class="fa fa-weixin"></a></li>
+                <li><a href="##" class="fa fa-weibo"></a></li>
+                <li><a href="##" class="fa fa-steam"></a></li>
+            </div>
+        </div>
+    </body>
+</html>    
